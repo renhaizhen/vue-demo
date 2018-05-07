@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>杆泵轮播</title>
+	<style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    .box{
+    	width: 880px;
+    	height: 550px;
+    	margin: 50px auto;
+    	border: 1px solid #000;
+    	overflow: hidden;
+    	position: relative;
+    	cursor: pointer;
+    }
+    .box p{
+    	position: absolute;
+    	width: 29px;
+    	height: 34px;
+    	background: url(images/qleft.png) no-repeat;
+    	top: 50%;
+    	margin-top: -17px;
+    }
+    .box p.left_btn{
+    	left: 20px;
+    }
+    .box p.right_btn{
+    	left: 20px;
+    	background-position: 0 -45px;
+    }
+    .box .tu{
+    	width: 880px;
+    	height: 550px;
+    	background: url(images/1.jpg) no-repeat ;
+    }
+    .box ol{
+    	width: 120px;
+    	height: 20px;
+    	position: absolute;
+    	bottom: 30px;
+    	left: 50%;
+    	margin-left: -60px;
+    	overflow: hidden;
+    }
+    .box ol ul{
+    	float: left;
+    	width: 20px;
+    	height: 20px;
+    	margin-right: 10px;
+    	border-radius: 50%;
+    	background: rgba(255,255,255.4);
+    }
+    .box ol ul.cur{
+    	background: rgba(255,255,255,1);
+    }
+    .box ol ul:last-child{
+    	margin: 0;
+    }
+	</style>
+</head>
+<body>
+<div class="box" id="box">
+	<p class="left_btn" id="left"></p>
+	<div class="tu" id="bg"></div>
+	<p class="right_btn" id="right"></p>
+	<ol id="list">
+		<li class="cur"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ol>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+   //输出完美数
+	 var n=parseInt(prompt("请输入一个整数"));
+     console.log(wanmei(n));
+     //判断完美数
+     function wanmei(a){
+     	if (yueshuhe(a)==a) {
+        return "yes";
+     	}else{
+        return "no";
+     	}         
+     	}
+     	//求约束和的函数
+     function yueshuhe(a){
+     	var sum=0;
+     	for (var i = 0; i < a; i++) {
+     	  if (a%i==0) {
+     	  	sum+=i;
+     	  }
+     	}
+     	return sum;
+     }
+</script>
+</body>
+</html>

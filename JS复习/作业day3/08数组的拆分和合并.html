@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+      //数组的合并concat()
+      // concat()方法返回的是新的数组，不改变原来的数组，可以连接一个或多个数组。可以是散值
+      // var arr=[1,2,3,4,5];
+      // var arr1=[6,7,8,9]; 
+      // var newarr=arr.concat(arr1);
+      // console.log(arr);
+      // console.log(arr1);
+      // console.log(newarr);
+      //数组的拆分slice(start,end)方法,
+      //slice(start,end) 返回的是一个新的数组，通过数组的index进行拆分，start和end用数组的下标表示。包括start值不包括end的值是一个区间值  也可以只写start
+      var arr=[2,4,3,7,8,5];
+      var newarr=arr.slice(2, 5);9
+      console.log(newarr);
+      console.log(arr);
+      //下标可以是负数，负数是从-1开始的
+      var arr1=arr.slice(-3,-1);//表示倒数第3项到倒数第一项。 
+      console.log(arr1);
+      console.log(arr);
+	</script>
+</body>
+</html>

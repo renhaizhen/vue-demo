@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>批量控制事件</title>
+	<style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    p{
+    	widows: 100px;
+    	height: 50px;
+    	padding-left: 30px;
+    }
+    #btn{
+    	text-align: center;
+    }
+	</style>
+</head>
+<body>
+	<div>
+		<p>
+			<label><input type="checkbox">吃饭</label>
+		</p>
+		<p>
+			<label><input type="checkbox">睡觉</label>
+		</p>
+		<p>
+			<label><input type="checkbox">看书</label>
+		</p>
+		<p>
+			<label><input type="checkbox">喝水</label>
+		</p>
+		<p>
+			<label><input type="checkbox">写字</label>
+		</p>
+		<input type="button" id="btn" value="全选">
+	</div>
+	<script>
+         //获得元素
+         var tips =document.getElementsByTagName("input");
+         var btn =document.getElementById("btn");
+         //先显示全选
+           tips.onclick=function(){
+           	if (btn.value =="全选") {
+           		for (var i = 0; i < ipts.length; i++) {
+           			tips[i].checked="checked";
+           		}
+           			btn.value="全不选";
+           	}else{
+           		for (var i = 0; i < ipts.length; i++) {
+           			tips[i].checked="";
+           	}
+           	        btn.value="全选"; 
+
+           }
+
+	</script>
+</body>
+</html>

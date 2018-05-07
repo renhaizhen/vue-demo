@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+    //输出盈数-判断盈数-约数和
+    //输出盈数
+    var n=parseInt(prompt("请输入一个数"));
+    console.log(isyingshu(n));
+    //判断盈数
+    function isyingshu(a){
+    	if (yueshuhe(a)>a) {
+    		return "是盈数";
+    	}else{
+    		return "不是盈数";
+    	}
+    }
+         function yueshuhe(a){
+     	var sum=0;
+     	for (var i = 0; i < a; i++) {
+     	  if (a%i==0) {
+     	  	sum+=i;
+     	  }
+     	}
+     	return sum;
+     }
+	</script>
+</body>
+</html>

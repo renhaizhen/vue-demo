@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" id="lbtn" value="左按钮">
+	<img src="images/4.jpg" alt="" width="50%" id="img">
+	<input type="button" id="rbtn" value="右按钮">
+	<script>
+	var lbtn=document.getElementById("lbtn");
+	var img=document.getElementById("img");
+	var rbtn=document.getElementById("rbtn");
+	//信号量
+	var index =1;
+		lbtn.onclick=function(){
+			index--;
+			if (index<1) {
+				index=6;
+			}
+			change();
+		}
+		rbtn.onclick=function(){
+			index++;
+			if (index>6) {
+				index=1;
+			}
+			change();
+		}
+		function change(){
+			img.src = "images/" +index+ ".jpg";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>控制字体变化</title>
+	<style>
+     .op{
+     	font-size: 30px;
+     }
+	</style>
+</head>
+<body>
+	<input type="button" id="up" value="变大">
+	<p id="word" class="op">
+		我有行空添翼驹，何须悬崖急勒马。
+	</p>
+	<input type="button" id="low" value="变小">
+	<script>
+     //获取元素
+     var up=document.getElementById("up");
+     var word=document.getElementById("word");
+     var low=document.getElementById("low");
+     //信号量
+      var fs=30;
+      //绑定事件
+      up.onclick=function(){
+      	fs++;
+      	if (fs>60) {
+            fs=60;
+      	}change();
+      }
+      low.onclick=function(){
+      	fs--;
+      	if (fs<5) {
+      		fs=5;
+      	}change();
+      }
+      function change(){
+      	word.style.fontSize= fs + "px";
+       }
+	</script>
+</body>
+</html>

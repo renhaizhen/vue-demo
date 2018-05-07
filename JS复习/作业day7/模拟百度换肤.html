@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度换肤效果</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background:url(images/1.jpg) no-repeat center top;
+	}
+	.box{
+		width: 100%;
+		height: 150px;
+		padding-top: 30px;
+		background-color: rgba(255,255,255,.5);
+
+	}
+	.box.inner{
+		width: 1040px;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="inner">
+			<img src="images/1.jpg" width="200" alt="" id="img1">
+            <img src="images/2.jpg" width="200" alt="" id="img2">
+			<img src="images/3.jpg" width="200" alt="" id="img3">
+			<img src="images/4.jpg" width="200" alt="" id="img4">
+			<img src="images/5.jpg" width="200" alt="" id="img5">
+		</div>
+	</div>
+	<script>
+	var body=document.body;
+	var img1=document.getElementById("img1");
+	var img2=document.getElementById("img2");
+	var img3=document.getElementById("img3");
+	var img4=document.getElementById("img4");
+	var img5=document.getElementById("img5");
+	//信号量
+	var index = 1;
+	//绑定事件
+	img1.onclick=function(){
+         index=1;
+         bg();
+	}
+	img2.onclick=function(){
+         index=2;
+         bg();
+	}
+	img3.onclick=function(){
+         index=3;
+         bg();
+	}
+	img4.onclick=function(){
+         index=4;
+         bg();
+	}
+	img5.onclick=function(){
+         index=5;
+         bg();
+	}
+	function bg(){
+		body.style.background = "url(images/" + index + ".jpg)";
+	}
+
+	</script>
+</body>
+</html>

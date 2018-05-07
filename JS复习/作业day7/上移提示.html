@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	div{
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		padding-top: 100px;
+		border: 1px solid;
+		margin: 50px auto;
+
+	}
+	div span{
+		background-color: lightblue;
+		border: 1px solid #000;
+		display: none;
+	}
+	</style>
+	<script>
+	window.onload=function(){
+			//获得元素
+	var op=document.getElementById("op");
+	var tip=document.getElementById("tip");
+	//绑定事件
+	op.onmousemove=function(){
+		tip.style.display="block";
+	}
+	op.onmouseout=function(){
+		tip.style.display="none";
+	}
+	}
+	</script>
+</head>
+<body>
+	<div class="box">
+		<p>
+		<input type="text" placeholder="请输入文字" >
+	    </p>
+	    <p>
+	    <input type="password">
+	    </p>
+	    <p id="op">
+	    <label>	
+	    	<input type="checkbox" name="check">请点击
+	    </label>
+
+	    <span id="tip">
+	    	11111111111111111
+	    </span>
+	    </p>
+
+	</div>
+
+</body>
+</html>

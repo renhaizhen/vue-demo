@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+     function yueshuhe(a){
+     	var sum=0;
+     	for (var i = 0; i < a; i++) {
+     		if (a%i==0) {
+     			sum+=i;
+     		}
+     	}
+     	return sum;
+     }
+     function wanmeishu(a){
+     	if (yueshuhe(a)==a) {
+     		return true;	
+     	}
+     	else {
+     		return false;
+     	}
+        
+     }
+     function shuchu(a){
+     	for (var i = 1; i < a; i++) {
+     		if (wanmeishu(i)) {
+     			console.log(i);
+     		}
+     	}
+     }
+     shuchu(1000);
+	</script>
+</body>
+</html>

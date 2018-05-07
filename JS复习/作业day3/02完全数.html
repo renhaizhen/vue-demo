@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+     //能从1开始到这个数可以被整除的所有数的和等于该输入数即为完全数
+
+     for (var i = 1; i <= 10000; i++) 
+     {
+        var sum=0;
+        //遍历i数的约束，不包含它本身
+     	for (var j = 1; j < i; j++) 
+     	{
+        if (i % j == 0) 
+        {
+        	//sum自加
+           sum=sum+j;
+        }  
+
+     	}
+     	        if (sum==i) 
+        {
+        console.log(i);  
+        }
+  
+     }
+	</script>
+</body>
+</html>

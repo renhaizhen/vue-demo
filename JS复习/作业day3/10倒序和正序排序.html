@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+        var array=[5,4,68,12,3,8]
+        //排序倒序
+        //console.log(array.reverse());
+       
+
+       //正序默认排序
+       //console.log(array.sort());
+
+       //自定义降序排列
+     console.log(array.sort(function compareFunction(a,b){
+         
+      	if (a>b) {
+      		return -2;
+      	}else if(a<b){
+            return  1;  
+      	}else{
+
+      	}
+      }))
+	</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	div{
+		width: 100px;
+        border: 1px solid ;
+        text-align: center;
+        cursor: pointer;
+        line-height: 30px;
+        margin: 100px auto;
+	}
+	div p{
+        padding-left: 20px;
+        background: url(menu-arrow.png) no-repeat 10px center;
+	}
+	div li{
+		list-style: none;
+	}
+	</style>
+</head>
+<body>
+    <div id="box">
+    <p id="op">购物</p>
+    <ul id="list" style="display:none;">
+    	    <li>物品</li>
+    		<li>物品</li>
+    		<li>物品</li>
+    		<li>物品</li>
+    </ul>
+    </div>	
+    <script>
+    //获取元素
+         var box=document.getElementById("box");
+         var op=document.getElementById("op");
+         var list=document.getElementById("list");
+    //鼠标移入
+    box.onmouseover=function(){
+           list.style.display="block";
+    }
+    box.onmouseout=function(){
+    	   list.style.display="none";
+    }
+
+    </script>
+</body>
+</html>
